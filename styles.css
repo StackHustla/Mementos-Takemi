@@ -5,6 +5,7 @@
     --secondary-color: #0b3592;
     --tritary-color: #081a45;
     --text-color: #ffffff;
+    --text-color-3: #c2c2c2;
     --text-color-alt: #000;
 }
 
@@ -45,8 +46,7 @@ NAV
     font-size: 3rem;
     padding: 1rem;
     border-radius: 50%;
-    box-shadow: 1px 1px 4px black;
-
+    box-shadow: 1px 1px 4px rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
 }
 
@@ -58,7 +58,7 @@ NAV
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    box-shadow: 2px 2px 10px rgb(176, 176, 176);
+    box-shadow: 1px 1px 2px rgb(10, 10, 10);
 }
 
 .nav-content ul {
@@ -86,11 +86,11 @@ NAV
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    max-width: 400px;
+
 }
 
 .hero {
-    background-color: rgb(154, 154, 255);
+    background-color: var(--main-color);
     padding: 12rem 4rem;
     justify-content: center;
     display: flex;
@@ -100,20 +100,33 @@ NAV
     font-size: 4rem;
     display: flex;
     justify-content: center;
+    color: var(--text-color);
 }
 
 .hero p {
     justify-content: center;
-    display: flex;
-    font-size: 1.4rem;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 2rem;
+    color: var(--text-color-3);
 }
 
 .hero-button {
     padding: 1.2rem;
     background-color: var(--secondary-color);
     color: var(--text-color);
-    border-radius: 2rem;
+    border-radius: 1rem;
     text-decoration: none;
+    cursor: pointer;
+    border-style: none;
+    font-size: 1.6rem;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--tritary-color);
 }
 
 .hero-button a {
@@ -121,4 +134,14 @@ NAV
     color: var(--text-color);
 }
 
-/* add hover */
+.hero-image {
+    display: flex;
+    padding: 20px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    color: transparent;
+
+}
