@@ -137,6 +137,7 @@ NAV
 .hero-image {
     display: flex;
     padding: 20px;
+    justify-content: center;
 }
 
 .hero-image img {
