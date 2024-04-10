@@ -1,5 +1,11 @@
 :root {
+    /* Takemi Theme */
     font-size: 62.5%;
+    --main-color: #1b4fba;
+    --secondary-color: #0b3592;
+    --tritary-color: #081a45;
+    --text-color: #ffffff;
+    --text-color-alt: #000;
 }
 
 *,
@@ -22,7 +28,26 @@ nav ul li a {
 
 html {
     scroll-behavior: smooth;
-    
+
+}
+
+/* 
+NAV
+ */
+
+.nav-content {
+
+    position: fixed;
+
+}
+
+.nav-content i {
+    font-size: 3rem;
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px black;
+
+    background-color: rgb(255, 255, 255);
 }
 
 .nav-content {
@@ -31,21 +56,69 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     padding: 2rem;
     box-shadow: 2px 2px 10px rgb(176, 176, 176);
 }
+
 .nav-content ul {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
 }
+
 .nav-content li {
     font-weight: bold;
     font-size: 1.2rem;
     color: black;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .nav-content a {
     text-decoration: none;
 }
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 400px;
+}
+
+.hero {
+    background-color: rgb(154, 154, 255);
+    padding: 12rem 4rem;
+    justify-content: center;
+    display: flex;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.hero p {
+    justify-content: center;
+    display: flex;
+    font-size: 1.4rem;
+}
+
+.hero-button {
+    padding: 1.2rem;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-radius: 2rem;
+    text-decoration: none;
+}
+
+.hero-button a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* add hover */
