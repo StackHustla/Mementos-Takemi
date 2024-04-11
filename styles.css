@@ -150,8 +150,8 @@ NAV
 .divider-1 {
     height: 100%;
     width: 100%;
-    display: flex;
 
+    z-index: -1;
 }
 
 
@@ -164,29 +164,128 @@ NAV
     align-items: center;
     justify-items: center;
     width: 75%;
-    margin-top:3rem;
+    margin-top: 3rem;
     transition: all 0.5sec ease-in-out;
 }
+
 @media screen and (max-width: 860px) {
     .testimony-logos {
         grid-template-columns: repeat(3, auto);
     }
-    
+
 }
+
 .testimony-logos svg {
     width: 75%;
     height: auto;
     fill: white;
 }
-.test-center{
+
+.test-center {
     display: flex;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
 }
-@media screen and (max-width: 860px) {
+
 .hero-content h2 {
+    text-align: center;
+    color: var(--text-color);
+    min-width: 50%;
+}
+
+@media screen and (max-width: 860px) {
+    .hero-content h2 {
         text-align: center;
         width: 65%;
     }
+
+}
+
+.mementos-platform {
+    padding: 0 6rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.platform-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+    gap: 3rem;
     
 }
+
+.platform-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+}
+
+.platform-info h2 {
+    font-size: 1.5rem;
+}
+
+.platform-info h1 {
+    font-size: 3rem;
+}
+
+.platform-info p {
+    font-size: 2rem;
+    max-width: 50rem;
+}
+
+.platform-button {
+    display: inline-block;
+    padding: 1.2rem;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-radius: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    border-style: none;
+    font-size: 1.6rem;
+    max-width: 12rem;
+}
+
+.platform-button:hover,
+.platform-button:focus {
+    background-color: var(--tritary-color);
+}
+
+.platform-img {
+    width: 100%;
+    height: auto;
+    max-width: 70rem;
+}
+
+.platform-button a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.platform-img img {
+    width: 100%;
+}
+
+/* 
+.platform-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+    gap: 3rem;
+    max-width: 120rem; /* Adjust max-width as needed */
+}
+
+.platform-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    flex: 1; /* Allow the platform-info to grow to fill the available space */
+}
+
+
+*/

@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 27.9.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1200 243.9" style="enable-background:new 0 0 1200 243.9;" xml:space="preserve">
-<style type="text/css">
-	.st0{opacity:0.5;fill:#1B4FBA;}
-	.st1{fill:#1B4FBA;}
-	.st2{opacity:0.3;fill:#1B4FBA;}
-</style>
-<polygon class="st0" points="435,228.1 799.1,121.2 1200,0 0,0 "/>
-<polygon class="st1" points="1121.7,170.7 152,121.2 0,0 1200,0 "/>
-<polygon class="st2" points="306.3,0 648.7,243.9 755.6,182.6 929.7,228.1 1125.6,0 "/>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	y="0px" viewBox="0 0 1200 158" style="enable-background:new 0 0 1200 158;" xml:space="preserve">
+	<style type="text/css">
+		.st0 {
+			opacity: 0.5;
+			fill: #1B4FBA;
+			enable-background: new;
+		}
+
+		.st1 {
+			fill: #1B4FBA;
+		}
+
+		.st2 {
+			opacity: 0.3;
+			fill: #1B4FBA;
+			enable-background: new;
+		}
+	</style>
+	<polygon class="st0" points="73,118 799.1,91.2 1200,0 0,0 " />
+	<polygon class="st1" points="1121.7,140.7 732,59 165,124 0,0 1200,0 " />
+	<polygon class="st2" points="306.3,0 486,158 771,59 1008,152 1125.6,0 " />
 </svg>
