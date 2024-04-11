@@ -146,3 +146,47 @@ NAV
     color: transparent;
 
 }
+
+.divider-1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+}
+
+
+
+.testimony-logos {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 5rem;
+    font-size: 5rem;
+    align-items: center;
+    justify-items: center;
+    width: 75%;
+    margin-top:3rem;
+    transition: all 0.5sec ease-in-out;
+}
+@media screen and (max-width: 860px) {
+    .testimony-logos {
+        grid-template-columns: repeat(3, auto);
+    }
+    
+}
+.testimony-logos svg {
+    width: 75%;
+    height: auto;
+    fill: white;
+}
+.test-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+@media screen and (max-width: 860px) {
+.hero-content h2 {
+        text-align: center;
+        width: 65%;
+    }
+    
+}
