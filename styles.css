@@ -138,10 +138,12 @@ NAV
     display: flex;
     padding: 20px;
     justify-content: center;
+    max-width: 200rem;
+    min-width: 50rem;
 }
 
 .hero-image img {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
     color: transparent;
 
@@ -165,6 +167,7 @@ NAV
     justify-items: center;
     width: 75%;
     margin-top: 3rem;
+    max-width: 100rem;
     transition: all 0.5sec ease-in-out;
 }
 
@@ -203,9 +206,11 @@ NAV
 
 .mementos-platform {
     padding: 0 6rem;
+    display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
+
 }
 
 .platform-content {
@@ -214,14 +219,14 @@ NAV
     justify-content: center;
     margin: 3rem;
     gap: 3rem;
-    
+
 }
 
 .platform-info {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    
+
 }
 
 .platform-info h2 {
@@ -237,18 +242,6 @@ NAV
     max-width: 50rem;
 }
 
-.platform-button {
-    display: inline-block;
-    padding: 1.2rem;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    border-radius: 1rem;
-    text-decoration: none;
-    cursor: pointer;
-    border-style: none;
-    font-size: 1.6rem;
-    max-width: 12rem;
-}
 
 .platform-button:hover,
 .platform-button:focus {
@@ -258,7 +251,8 @@ NAV
 .platform-img {
     width: 100%;
     height: auto;
-    max-width: 70rem;
+    min-width: 30rem;
+    max-width: 50rem;
 }
 
 .platform-button a {
@@ -270,22 +264,130 @@ NAV
     width: 100%;
 }
 
-/* 
-.platform-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 3rem;
-    gap: 3rem;
-    max-width: 120rem; /* Adjust max-width as needed */
-}
-
 .platform-info {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    flex: 1; /* Allow the platform-info to grow to fill the available space */
+
 }
 
+.stats-section {
 
+    padding: 6rem;
+    width: 100%;
+    margin: 2rem 0 7rem 0;
+}
+
+.mementos-stats {
+    max-width: 100rem;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid rgba(27, 27, 27, 0.16);
+}
+
+.mementos-stats h2 {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.stats-stack h2 {
+    margin-top: 3rem;
+    font-size: 2rem;
+    align-items: start;
+}
+
+.stats-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+
+.takemi-icons {
+    width: 100%;
+    width: 15rem;
+    border: 0.4rem solid var(--secondary-color);
+    border-radius: 50%;
+}
+
+.stats-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats-set {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.stats-stack h1 {
+    font-size: 10rem;
+    margin-bottom: -4.2rem;
+    letter-spacing: -0.6rem;
+}
+
+.takemi-consultation {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    padding: 20px 60px;
+}
+
+.takemi-consultation h1 {
+    display: flex;
+    font-size: 3rem;
+
+}
+
+.consultation-heading {
+    display: flex;
+    justify-content: center;
+}
+
+.consultation-info {
+    max-width: 1312px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.consultation-grid-1 {
+    display: grid;
+    grid-template-columns: minmax(0, 800px) minmax(0, 528px);
+    gap: 3rem;
+}
+
+.card-1 {
+    background-color: var(--main-color);
+    width: 100%;
+    border-radius: 16px;
+    padding: 48px;
+    padding-bottom: 0;
+}
+
+.card-2 {
+    background-color: var(--secondary-color);
+    width: 100%;
+    border-radius: 16px;
+    padding: 48px;
+    padding-bottom: 0;
+}
+
+.card-1-info {}
+
+
+/* in my previous site, I used containers that had similar settings for each.
+Simple and straight to the point. Kept margins and padding in line for each.
+maybe I can make 2-3 for sections that can be reused.
+
+border-top: 1px solid rgba(27, 27, 27, 0.16); straight line
 */
