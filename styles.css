@@ -167,7 +167,13 @@ NAV
     z-index: -1;
 }
 
-
+.divider-2 {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    padding-top: 10rem;
+    margin-bottom: -3px;
+}
 
 .testimony-logos {
     display: grid;
@@ -518,6 +524,20 @@ NAV
     width: 80%;
     height: auto;
 }
+
+/* 
+
+Global
+
+*/
+
+.global {
+    background-color: var(--quad-color);
+    padding: 12rem 4rem;
+    justify-content: center;
+    display: flex;
+}
+
 
 /* in my previous site, I used containers that had similar settings for each.
 Simple and straight to the point. Kept margins and padding in line for each.
