@@ -533,67 +533,129 @@ Global
 
 .global {
     background-color: var(--quad-color);
-    padding: 12rem 2rem;
+    padding: 6rem 2rem;
     /* Adjust padding for smaller screens */
-    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     /* Allow items to wrap to the next line */
+    justify-content: center;
 }
 
 .global-info {
     display: flex;
     flex-direction: column;
-    /* Arrange items vertically */
     align-items: center;
-    /* Center items horizontally */
     text-align: center;
-    /* Center text */
+    width: 100%;
+    max-width: 1200px;
+    /* Set max width for better readability */
 }
 
 .global-text {
     margin-bottom: 3rem;
+    width: 100%;
+    max-width: 900px;
+    /* Limit text width for better readability */
+    color: var(--text-color);
+
+}
+
+.global-text h3 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.global-text h2 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.global-text p {
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+}
+.grid-settings{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .global-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust min width of grid items */
     gap: 2rem;
     width: 100%;
     max-width: 1200px; /* Set a maximum width for the grid */
     margin: 0 auto; /* Center the grid horizontally */
+    padding: 0 2rem;
     margin-top: 3rem;
+}
+
+.global-grid h2 {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    display: flex;
 }
 
 .global-grid div {
     text-align: center;
-    /* Center text inside grid items */
 }
 
-.hero-button {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
+/* 
+delete later
+*/
+#portfolio {
+    min-height: 9vh;
+    padding-top: 8vh;
+}
+
+.port-heading {
+    margin-bottom: 2rem;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+}
+
+.portfolio h2 {
+    font-size: 5rem;
+}
+
+.portfolio h3 {
+    font-size: 3rem;
+    padding: 2rem;
+}
+.image-grid {
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+    padding-top: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.hero-button:hover {
-    background-color: var(--primary-color-dark);
-}
-
-@media screen and (min-width: 768px) {
-
-    /* Adjust breakpoint as needed */
-    .global-grid {
+@media screen and (max-width: 1024px) {
+    .image-grid {
         grid-template-columns: repeat(3, 1fr);
-        /* Three items per row on larger screens */
+        --row-height: 200px;
     }
 }
-
 /* in my previous site, I used containers that had similar settings for each.
 Simple and straight to the point. Kept margins and padding in line for each.
 maybe I can make 2-3 for sections that can be reused.
