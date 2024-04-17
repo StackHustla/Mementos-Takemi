@@ -158,7 +158,6 @@ NAV
     max-width: 75%;
     height: auto;
     color: transparent;
-
 }
 
 .divider-1 {
@@ -227,7 +226,6 @@ NAV
     justify-content: center;
     justify-items: center;
     align-items: center;
-
 }
 
 .platform-content {
@@ -259,7 +257,6 @@ NAV
     max-width: 50rem;
 }
 
-
 .platform-button:hover,
 .platform-button:focus {
     background-color: var(--tritary-color);
@@ -289,25 +286,36 @@ NAV
 }
 
 .stats-section {
-
-    padding: 6rem;
+    max-width: 100%;
+    padding-top: 10rem;
     width: 100%;
-    margin: 2rem 0 7rem 0;
+    margin: 0 auto;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .mementos-stats {
-    max-width: 100rem;
+    max-width: 90%;
     width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-top: 1px solid rgba(27, 27, 27, 0.16);
+    align-items: center;
+    padding: 3rem 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .stats-section {
+        padding: 2rem;
+    }
 }
 
 .mementos-stats h2 {
     font-size: 2rem;
     margin: 2rem 0;
+
 }
 
 .stats-stack h2 {
@@ -317,15 +325,15 @@ NAV
 }
 
 .stats-content {
+    gap: 4rem;
     display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 4rem;
 }
 
 .takemi-icons {
-    width: 100%;
-    width: 15rem;
+    max-width: 13rem;
     border: 0.4rem solid var(--secondary-color);
     border-radius: 50%;
 }
@@ -339,7 +347,11 @@ NAV
 .stats-set {
     display: flex;
     gap: 2rem;
-    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
 }
 
 .stats-stack h1 {
@@ -533,21 +545,18 @@ Global
 
 .global {
     background-color: var(--quad-color);
-    padding: 6rem 2rem;
-    /* Adjust padding for smaller screens */
+    padding: 5rem 4rem 5rem 4rem;
     display: flex;
-    flex-wrap: wrap;
-    /* Allow items to wrap to the next line */
     justify-content: center;
 }
 
-.global-info {
+.global-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 100%;
-    max-width: 1200px;
+    justify-content: center;
+
     /* Set max width for better readability */
 }
 
@@ -574,88 +583,35 @@ Global
     font-size: 1.6rem;
     padding-bottom: 1rem;
 }
-.grid-settings{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
 
-.global-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust min width of grid items */
-    gap: 2rem;
-    width: 100%;
-    max-width: 1200px; /* Set a maximum width for the grid */
-    margin: 0 auto; /* Center the grid horizontally */
-    padding: 0 2rem;
-    margin-top: 3rem;
-}
-
-.global-grid h2 {
-    color: var(--text-color);
-    font-size: 1.8rem;
-    display: flex;
-}
-
-.global-grid div {
-    text-align: center;
-}
-
-/* 
-delete later
-*/
-#portfolio {
-    min-height: 9vh;
-    padding-top: 8vh;
-}
-
-.port-heading {
-    margin-bottom: 2rem;
-}
-
-.portfolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 4rem;
-}
-
-.portfolio h2 {
-    font-size: 5rem;
-}
-
-.portfolio h3 {
-    font-size: 3rem;
-    padding: 2rem;
-}
 .image-grid {
-    --gap: 16px;
-    --num-cols: 4;
-    --row-height: 300px;
-
-    box-sizing: border-box;
-    padding: var(--gap);
-    padding-top: 40px;
-
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: var(--row-height);
-    gap: var(--gap);
+    grid-template-columns: repeat(3, auto);
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+    max-width: 55%;
+    min-width: 45%;
+    margin-top: 3rem;
+    transition: all 1sec ease-in-out;
 }
 
 .image-grid img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    object-fit: inherit;
     cursor: pointer;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
     .image-grid {
-        grid-template-columns: repeat(3, 1fr);
-        --row-height: 200px;
+        grid-template-columns: repeat(1, 1fr);
+        --row-height: 400px;
+        justify-content: center;
     }
+
 }
+
 /* in my previous site, I used containers that had similar settings for each.
 Simple and straight to the point. Kept margins and padding in line for each.
 maybe I can make 2-3 for sections that can be reused.
