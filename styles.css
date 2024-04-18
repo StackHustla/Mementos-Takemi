@@ -150,6 +150,7 @@ NAV
     display: flex;
     padding: 20px;
     justify-content: center;
+    align-items: center;
     max-width: 200rem;
     min-width: 50rem;
 }
@@ -159,7 +160,28 @@ NAV
     height: auto;
     color: transparent;
 }
+.stats-image {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 200rem;
+    min-width: 50rem;
+    flex-direction: row;
+    gap: 20px;
+}
 
+.stats-image img {
+    max-width: 200px;
+    height: auto;
+
+}
+@media screen and (max-width: 960px) {
+    .stats-image {
+        grid-template-columns: repeat(3, auto);
+    }
+
+}
 .divider-1 {
     height: 100%;
     width: 100%;
@@ -295,7 +317,7 @@ NAV
 }
 
 .mementos-stats {
-    max-width: 90%;
+    max-width: 60%;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -333,7 +355,7 @@ NAV
 }
 
 .takemi-icons {
-    max-width: 13rem;
+   
     border: 0.4rem solid var(--secondary-color);
     border-radius: 50%;
 }
