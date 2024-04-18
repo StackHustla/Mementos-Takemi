@@ -90,6 +90,8 @@ NAV
 
 }
 
+
+
 .hero {
     background-color: var(--main-color);
     padding: 12rem 4rem;
@@ -108,10 +110,10 @@ NAV
     justify-content: center;
     width: 50%;
     margin: 0 auto;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-align: center;
-    line-height: 2rem;
-    color: var(--text-color-3);
+    line-height: 2.5rem;
+    color: var(--text-color);
 }
 
 .hero-button {
@@ -160,6 +162,7 @@ NAV
     height: auto;
     color: transparent;
 }
+
 .stats-image {
     display: flex;
     padding: 20px;
@@ -168,7 +171,7 @@ NAV
     max-width: 200rem;
     min-width: 50rem;
     flex-direction: row;
-    gap: 20px;
+    gap: 40px;
 }
 
 .stats-image img {
@@ -176,12 +179,15 @@ NAV
     height: auto;
 
 }
+
 @media screen and (max-width: 960px) {
     .stats-image {
-        grid-template-columns: repeat(3, auto);
+        flex-wrap: wrap;
+        gap: 30px;
     }
 
 }
+
 .divider-1 {
     height: 100%;
     width: 100%;
@@ -342,7 +348,7 @@ NAV
 
 .stats-stack h2 {
     margin-top: 3rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
     align-items: start;
 }
 
@@ -355,7 +361,7 @@ NAV
 }
 
 .takemi-icons {
-   
+
     border: 0.4rem solid var(--secondary-color);
     border-radius: 50%;
 }
@@ -609,11 +615,10 @@ Global
 .image-grid {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    gap: 2rem;
+    gap: 4rem;
     align-items: center;
     justify-items: center;
-    max-width: 55%;
-    min-width: 45%;
+    max-width: 1312px;
     margin-top: 3rem;
     transition: all 1sec ease-in-out;
 }

@@ -1,0 +1,7 @@
+These are code snippets and notes to self to streamline builds and other front end projects
+
+section {
+    min-height: 100vh;
+    padding: 10rem 12% 10rem;
+}
+this is how I usually build things. I feel as though I made things harder on myself with this one. Could've easily used REACT or Next.JS but vanilla is very important
