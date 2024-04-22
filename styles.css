@@ -43,6 +43,11 @@ NAV
 
 }
 
+section {
+    min-height: 50vh;
+    padding: 10rem 12% 10rem;
+}
+
 .nav-content i {
     font-size: 3rem;
     padding: 1rem;
@@ -169,7 +174,7 @@ NAV
     justify-content: center;
     align-items: center;
     max-width: 200rem;
-    min-width: 50rem;
+    min-width: 55rem;
     flex-direction: row;
     gap: 40px;
 }
@@ -184,6 +189,7 @@ NAV
     .stats-image {
         flex-wrap: wrap;
         gap: 30px;
+        justify-content: left;
     }
 
 }
@@ -578,23 +584,27 @@ Global
     justify-content: center;
 }
 
-.global-content {
+.global-bonus {
+    background-color: var(--quad-color);
+    padding: 5rem 4rem 5rem 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.global-content,
+.bonus-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
-
-    /* Set max width for better readability */
 }
 
 .global-text {
     margin-bottom: 3rem;
     width: 100%;
     max-width: 900px;
-    /* Limit text width for better readability */
     color: var(--text-color);
-
 }
 
 .global-text h3 {
@@ -610,6 +620,71 @@ Global
 .global-text p {
     font-size: 1.6rem;
     padding-bottom: 1rem;
+}
+
+.bonus-text {
+    margin-bottom: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--text-color);
+}
+
+.bonus-text a {
+    margin-top: 1rem
+}
+
+.bonus-content p {
+    max-width: 600px;
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+.bonus-content h2 {
+    max-width: 600px;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.bonus-content h3 {
+    max-width: 600px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.bonus-grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 4rem;
+    align-items: center;
+    justify-items: center;
+    max-width: 1312px;
+    margin-top: 3rem;
+}
+
+.grid-details {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    line-height: 1.8rem;
+    text-align: left;
+    gap: 1rem;
+}
+
+.grid-details h3 {
+    font-size: 2rem;
+}
+
+.grid-details img {
+    width: 10rem;
+    padding-bottom: 3rem;
+}
+
+.grid-details p {
+    max-width: 200px;
+    font-size: 1.3rem;
 }
 
 .image-grid {
