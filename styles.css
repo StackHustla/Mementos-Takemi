@@ -208,6 +208,16 @@ section {
     margin-bottom: -3px;
 }
 
+.divider-3 {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    padding-top: 6rem;
+    transform: rotate(3.142rad);
+    margin-top: -3px;
+}
+
+
 .testimony-logos {
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -622,6 +632,7 @@ Global
     padding-bottom: 1rem;
 }
 
+
 .bonus-text {
     margin-bottom: 3rem;
     width: 100%;
@@ -636,7 +647,7 @@ Global
 }
 
 .bonus-content p {
-    max-width: 600px;
+    max-width: 700px;
     font-size: 1.8rem;
     line-height: 2rem;
 }
