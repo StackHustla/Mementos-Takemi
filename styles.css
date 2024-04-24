@@ -211,10 +211,7 @@ section {
 .divider-3 {
     height: 100%;
     width: 100%;
-    z-index: -1;
-    padding-top: 6rem;
-    transform: rotate(3.142rad);
-    margin-top: -3px;
+    z-index: 1;
 }
 
 
@@ -723,6 +720,12 @@ Global
         justify-content: center;
     }
 
+}
+
+.global-coverage {
+    min-height: 30vh;
+    background-color: var(--main-color);
+    margin-top: -3px;
 }
 
 /* in my previous site, I used containers that had similar settings for each.
