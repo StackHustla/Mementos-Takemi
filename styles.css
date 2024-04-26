@@ -723,10 +723,56 @@ Global
 }
 
 .global-coverage {
-    min-height: 30vh;
     background-color: var(--main-color);
     margin-top: -3px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
 }
+
+.coverage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coverage-city {
+margin-top: -100px;
+z-index: -100;
+
+}
+
+.coverage-city img {
+    width: 100%;
+    height: auto;
+    background-color: var(--main-color);
+}
+.coverage-text h3,
+.coverage-text h2,
+.coverage-text p {
+    color: white;
+    max-width: 700px;
+    padding-bottom: 1rem;
+}
+
+.coverage-text h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
+.coverage-text h3 {
+    font-size: 1.5rem;
+}
+
+.coverage-text p {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+}
+
+
 
 /* in my previous site, I used containers that had similar settings for each.
 Simple and straight to the point. Kept margins and padding in line for each.
