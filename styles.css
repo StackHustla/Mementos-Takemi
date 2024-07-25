@@ -170,7 +170,7 @@ section {
 
 .stats-image {
     display: flex;
-    padding: 20px;
+    padding: 30px;
     justify-content: center;
     align-items: center;
     max-width: 200rem;
@@ -190,6 +190,10 @@ section {
         flex-wrap: wrap;
         gap: 30px;
         justify-content: left;
+    }
+    .mementos-stats h2 {
+        font-size: 2rem !important; 
+        text-align: center;
     }
 
 }
@@ -260,7 +264,7 @@ section {
     }
 
 }
-
+/* PLATFORM */
 .mementos-platform {
     padding: 0 6rem;
     display: flex;
@@ -275,14 +279,12 @@ section {
     justify-content: center;
     margin: 3rem;
     gap: 3rem;
-
 }
 
 .platform-info {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-
 }
 
 .platform-info h2 {
@@ -319,12 +321,37 @@ section {
     width: 100%;
 }
 
-.platform-info {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+@media screen and (max-width: 768px) {
+    .mementos-platform {
+        flex-direction: column;
+        padding: 3rem 1rem; /* Adjust padding as needed */
+    }
 
+    .platform-content {
+        flex-direction: column;
+        gap: 2rem; /* Adjust gap as needed */
+    }
+
+    .platform-info h1 {
+        font-size: 2.5rem; /* Adjust font size as needed */
+    }
+
+    .platform-info h2 {
+        font-size: 2rem; /* Adjust font size as needed */
+    }
+
+    .platform-info p {
+        font-size: 1.8rem; /* Adjust font size as needed */
+    }
+
+    .platform-img {
+        min-width: 75%;
+        max-width: 75%;
+        
+    }
 }
+
+/* STATS */
 
 .stats-section {
     max-width: 100%;
@@ -347,11 +374,6 @@ section {
     padding: 3rem 2rem;
 }
 
-@media screen and (max-width: 768px) {
-    .stats-section {
-        padding: 2rem;
-    }
-}
 
 .mementos-stats h2 {
     font-size: 2rem;
@@ -400,6 +422,31 @@ section {
     margin-bottom: -4.2rem;
     letter-spacing: -0.6rem;
 }
+
+@media screen and (max-width: 768px) {
+    .stats-section {
+        padding: 3rem;
+    }
+
+    .stats-content {
+        flex-direction: column;
+        padding: 0;
+        gap: 2rem; /* Adjust gap as needed */
+    }
+
+    .stats-set {
+        flex-direction: column;
+        padding: 2rem 1rem; /* Adjust padding as needed */
+    }
+
+    .stats-set h1 {
+        font-size: 8rem; /* Adjust font size as needed */
+        margin-bottom: -2rem; /* Adjust margin as needed */
+        letter-spacing: -0.3rem; /* Adjust letter spacing as needed */
+    }
+}
+
+/* CONSULTATION */
 
 .takemi-consultation {
     text-align: center;
@@ -576,6 +623,27 @@ section {
 .card-img-2 {
     width: 80%;
     height: auto;
+}
+
+@media (max-width: 768px) {
+    .consultation-grid-1, .consultation-grid-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .card-1, .card-2, .card-3 {
+        padding: 24px;
+    }
+
+    .card-1 h5, .card-2 h5, .card-3 h5 {
+        font-size: 2rem;
+    }
+
+    .card-1 p, .card-2 p, .card-3 p {
+        font-size: 1.5rem; 
+        line-height: 2rem;
+    }
 }
 
 /* 
