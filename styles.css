@@ -37,9 +37,20 @@ html {
 NAV
  */
 
-.nav-content {
+#navbar {
+    background-color: var(--primary-color);
 
-    position: fixed;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#takemi-logo{
+    width: 70%;
 
 }
 
@@ -57,7 +68,7 @@ section {
 }
 
 .nav-content {
-    background-color: rgb(238, 238, 238);
+    background-color: var(--quad-color);
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -71,31 +82,32 @@ section {
     list-style: none;
     display: flex;
     gap: 3rem;
+    align-items: center;
 }
 
 .nav-content li {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: black;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
+    margin: 0 1rem;
+    transition: ease-in-out 0.3s;
+
 }
 
 .nav-content a {
+    color: var(--text-color);
     text-decoration: none;
-}
-
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
+    transition: color 0.3s;
+    font-size: 1.5rem;
 
 }
 
+.nav-content a:hover {
+    color: var(--main-color);
+    transform: scale(1.5);
+}
 
+.nav-content li:hover {
+    transform: rotate(8deg)}
+
+/* HERO */
 
 .hero {
     background-color: var(--main-color);
@@ -104,11 +116,23 @@ section {
     display: flex;
 }
 
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+
 .hero h1 {
     font-size: 4rem;
     display: flex;
-    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
     color: var(--text-color);
+    padding: 0 2rem;
 }
 
 .hero p {
@@ -239,8 +263,8 @@ section {
 
 }
 
-.testimony-logos svg {
-    width: 75%;
+.testimony-logos img {
+    width: 100%;
     height: auto;
     fill: white;
 }
