@@ -111,7 +111,7 @@ section {
 
 .hero {
     background-color: var(--main-color);
-    padding: 12rem 4rem;
+    padding: 6rem 4rem;
     justify-content: center;
     display: flex;
 }
