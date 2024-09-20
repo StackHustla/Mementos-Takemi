@@ -37,7 +37,7 @@ html {
 NAV
  */
 
- #navbar {
+#navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,11 +109,13 @@ section {
 }
 
 .mobile-menu {
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     position: absolute;
     top: 70px;
     right: 0;
-    background-color: var(--quad-color); /* Use your theme color */
+    background-color: var(--quad-color);
+    /* Use your theme color */
     width: 100%;
     text-align: right;
 }
@@ -126,24 +128,29 @@ section {
 .mobile-menu ul li a {
     display: block;
     padding: 1rem;
-    color: var(--text-color); /* Use your theme colors */
+    color: var(--text-color);
+    /* Use your theme colors */
     text-decoration: none;
     font-size: 16px;
-    border-bottom: 1px solid #444; /* Optional: for a divider between items */
+    border-bottom: 1px solid #444;
+    /* Optional: for a divider between items */
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     #navbar ul {
-        display: none; /* Hide the default navbar */
+        display: none;
+        /* Hide the default navbar */
     }
 
     .hamburger {
-        display: block; /* Show the hamburger icon */
+        display: block;
+        /* Show the hamburger icon */
     }
 
     .mobile-menu.show {
-        display: block; /* Show the mobile menu when the class is added */
+        display: block;
+        /* Show the mobile menu when the class is added */
     }
 }
 
@@ -709,7 +716,7 @@ section {
     height: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
 
     .consultation-grid-1,
     .consultation-grid-2 {
@@ -722,12 +729,15 @@ section {
     .card-2,
     .card-3 {
         padding: 24px;
+
     }
 
     .card-1 h5,
     .card-2 h5,
     .card-3 h5 {
         font-size: 2rem;
+        text-align: center;
+
     }
 
     .card-1 p,
@@ -735,6 +745,31 @@ section {
     .card-3 p {
         font-size: 1.5rem;
         line-height: 2rem;
+        text-align: center;
+    }
+
+    .takemi-consultation {
+        padding: 10px 120px;
+    }
+
+    .card-1-button {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .takemi-consultation {
+        padding: 10px 50px;
+    }
+    .card-1-button {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-bottom: 20px;
     }
 }
 
@@ -1006,8 +1041,10 @@ Global
     border-radius: 20px;
     cursor: pointer;
     font-size: 18px;
-    z-index: 1000; /* Ensure it sits above other content */
-    display: none; /* Hide initially */
+    z-index: 1000;
+    /* Ensure it sits above other content */
+    display: none;
+    /* Hide initially */
 }
 
 
