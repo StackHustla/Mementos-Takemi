@@ -39,7 +39,7 @@ backToTopButton.addEventListener('click', () => {
     });
 });
 
-/* document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     const elements = document.querySelectorAll('.element');
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -53,4 +53,3 @@ backToTopButton.addEventListener('click', () => {
         observer.observe(element);
     });
 });
- */
