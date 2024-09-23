@@ -49,8 +49,10 @@ NAV
     justify-content: center;
     align-items: center;
     background-color: var(--quad-color);
+    position: fixed;
     width: 100%;
     padding: 2rem;
+    margin-top: 5.2rem;
     box-shadow: 1px 1px 2px rgb(10, 10, 10);
 }
 
@@ -65,10 +67,11 @@ section {
 
 .nav-content i {
     font-size: 3rem;
-    padding: 1rem;
+    padding: .6rem;
     border-radius: 50%;
     box-shadow: 1px 1px 4px rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
+    margin-top: 2rem;
 }
 
 .nav-content ul {
@@ -259,6 +262,7 @@ section {
     }
     #takemi-logo {
         max-width: 75%;
+        margin-top: 3rem;
     }
 }
 
@@ -1047,19 +1051,17 @@ Global
 
 .back-to-top {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 20px;
+    right: 20px;
     background-color: var(--secondary-color);
     color: white;
-    border: none;
+    border: solid white;
     padding: 10px 15px;
     border-radius: 20px;
     cursor: pointer;
     font-size: 18px;
     z-index: 1000;
-    /* Ensure it sits above other content */
     display: none;
-    /* Hide initially */
 }
 
 
