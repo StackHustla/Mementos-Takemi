@@ -172,6 +172,12 @@ section {
     gap: 2rem;
 
 }
+/* .hero-content img {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+
+} */
 
 .hero h1 {
     font-size: 4rem;
@@ -230,20 +236,29 @@ section {
     padding: 20px;
     justify-content: center;
     align-items: center;
-    max-width: 200rem;
+    max-width: 180rem;
     min-width: 50rem;
+    flex-direction: column;
+    gap: 6rem;
 }
 
 .hero-image img {
     max-width: 85%;
     height: auto;
     color: transparent;
-
+}
+#takemi-logo {
+    max-width: 55%;
+    height: auto;
+    color: transparent;
 }
 
 @media screen and (max-width: 768px) {
     .hero-image img {
         max-width: 100%;
+    }
+    #takemi-logo {
+        max-width: 75%;
     }
 }
 
