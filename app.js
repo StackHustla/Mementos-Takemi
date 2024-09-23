@@ -38,7 +38,7 @@ backToTopButton.addEventListener('click', () => {
         behavior: 'smooth' // Smooth scroll effect
     });
 });
-
+/* 
 document.addEventListener('DOMContentLoaded', function() {
     const elements = document.querySelectorAll('.element');
     const observer = new IntersectionObserver(entries => {
@@ -53,3 +53,4 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(element);
     });
 });
+ */
