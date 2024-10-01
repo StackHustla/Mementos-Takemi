@@ -1069,7 +1069,7 @@ Global
 
 /* Animation */
 
-.element {
+/* .element {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -1078,9 +1078,9 @@ Global
 .element.show {
     opacity: 1;
     transform: translateY(0);
-}
+} */
 
-@keyframes fadeInUp {
+/* @keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(50px);
@@ -1095,7 +1095,7 @@ Global
     animation: fadeInUp 1.2s ease forwards;
     opacity: 0;
 }
-
+ */
 
 
 /* in my previous site, I used containers that had similar settings for each.
